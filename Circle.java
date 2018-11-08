@@ -9,22 +9,22 @@ package com.mycompany.shape;
  *
  * @author bacag
  */
-public class Square extends Shape {
-    int length;
-//constructor
-    public Square(int length) {
-        this.length = length;
+public class Circle extends Shape {
+    
+    int radius;
+    
+    public Circle(int radius) {
+        this.radius = radius;        
     }
-//clicked on the error message and this imported from Shape
+
     @Override
     public double getPerimeter() {
-        return length * 4;
+        return 2 * Math.PI * radius;
     }
 
     @Override
     public double getArea() {
-        return length * length;
+        return Math.PI*radius*radius;
     }
-    
     
 }

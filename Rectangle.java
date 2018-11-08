@@ -9,22 +9,23 @@ package com.mycompany.shape;
  *
  * @author bacag
  */
-public class Square extends Shape {
+public class Rectangle extends Shape {
     int length;
-//constructor
-    public Square(int length) {
+    int width;
+    
+    public Rectangle(int length, int width) {
         this.length = length;
+        this.width = width;
     }
-//clicked on the error message and this imported from Shape
+    
     @Override
     public double getPerimeter() {
-        return length * 4;
+        return (length * width)*2;
     }
 
     @Override
     public double getArea() {
-        return length * length;
+        return length * width;
     }
-    
     
 }

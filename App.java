@@ -11,6 +11,17 @@ package com.mycompany.shape;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Square area is " + length + " * "+ width " = "+ square.getArea());
+        
+        Shape square = new Square(10);
+        Shape rectangle = new Rectangle(3, 2);
+        Shape triangle = new Triangle(2, 3, 4, 5, 6);
+        Shape circle = new Circle(5);
+        
+        double squareArea = square.getArea();
+        double squarePerimeter = square.getPerimeter();
+        System.out.println(squareArea);
+        System.out.println(squarePerimeter);
+        
     }
 }
+
