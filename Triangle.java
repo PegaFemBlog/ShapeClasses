@@ -3,24 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.shape;
+package com.mycompany.shapestwo;
 
 /**
  *
  * @author bacag
  */
-public class Triangle extends Shape {
+public class Triangle extends ShapesTwo {
     int side1;
     int side2;
     int side3;
-    
     int base;
     int height;
-    //We are assuming that this triangle is an EQUILATERAL
-    // all sides have the same length
-    
-    
-    public Triangle(int side1, int side2, int side3, int base, int height){
+
+    public Triangle(int side1, int side2, int side3, int base, int height) {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -29,13 +25,13 @@ public class Triangle extends Shape {
     }
 
     @Override
-    public double getPerimeter() {
-        return side1 * side2 + side3;
+    public double getArea() {
+        return (base * height)/2;
     }
 
     @Override
-    public double getArea() {
-        return (base * height)/2;
+    public double getPerimeter() {
+        return side1 + side2 + side3;
     }
     
 }

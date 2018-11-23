@@ -3,28 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.shape;
+package com.mycompany.shapestwo;
 
 /**
  *
  * @author bacag
  */
-public class Square extends Shape {
+public class Square extends ShapesTwo {
+    
     int length;
-//constructor
+    
+    //generate constructor for declaration
     public Square(int length) {
         this.length = length;
     }
-//clicked on the error message and this imported from Shape
+    
+    //import abstract methods from ShapesTwo
     @Override
-    public double getPerimeter() {
+    public double getArea() {
         return length * 4;
     }
 
     @Override
-    public double getArea() {
+    public double getPerimeter() {
         return length * length;
     }
     
-    
 }
+ 

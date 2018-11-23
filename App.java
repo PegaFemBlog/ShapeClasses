@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.shape;
+package com.mycompany.shapestwo;
 
 /**
  *
@@ -11,17 +11,34 @@ package com.mycompany.shape;
  */
 public class App {
     public static void main(String[] args) {
+        //create new objects here by calling on the ShapesTwo class
+        ShapesTwo square = new Square(10);
+        ShapesTwo rectangle = new Rectangle(5, 8);
+        ShapesTwo triangle = new Triangle(4, 5, 6, 8, 10);
+        ShapesTwo circle = new Circle(7);
         
-        Shape square = new Square(10);
-        Shape rectangle = new Rectangle(3, 2);
-        Shape triangle = new Triangle(2, 3, 4, 5, 6);
-        Shape circle = new Circle(5);
+        //call the methods in the Square class
+        // with the ( . ) dot operator
+        double sqArea = square.getArea();
+        double sqPer = square.getPerimeter();
+        System.out.println(sqArea);
+        System.out.println(sqPer);
         
-        double squareArea = square.getArea();
-        double squarePerimeter = square.getPerimeter();
-        System.out.println(squareArea);
-        System.out.println(squarePerimeter);
+        double rectArea = rectangle.getArea();
+        double rectPer = rectangle.getPerimeter();
+        System.out.println(rectArea);
+        System.out.println(rectPer);
+        
+        double triArea = triangle.getArea();
+        double triPer = triangle.getPerimeter();
+        System.out.println(triArea);
+        System.out.println(triPer);
+        
+        double cirArea = circle.getArea();
+        double cirPer = circle.getPerimeter();
+        System.out.println(cirArea);
+        System.out.println(cirPer);
+        
         
     }
 }
-
